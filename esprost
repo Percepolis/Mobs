@@ -1,122 +1,430 @@
+# 
+# These example files show you some of the basic attributes and
+# skills MythicMobs can use. Far more is possible!
+SkeletalKnight:
+  Type: WITHER_SKELETON
+  Display: '&2Skeletal Knight'
+  Health: 40
+  Damage: 8
+  Drops:
+  - gold_nugget 2 0.5
+  DropsPerLevel:
+  - gold_nugget 1 0.5
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.1
+StaticallyChargedSheep:
+  Type: SHEEP
+  Display: '&bStatically Charged Sheep'
+  Health: 100
+  Damage: 2
+  Options:
+    MovementSpeed: 0.3
+  DamageModifiers:
+  - LIGHTNING 0
+  - FIRE 0.5
+  Skills:
+  - lightning @LivingInRadius{r=10} ~onTimer:100
+AngrySludge:
+  Type: SLIME
+  Display: Angry Sludge
+  Health: 100
+  Damage: 2
+  Options:
+    Size: 20
+    MovementSpeed: 0.1
+    PreventSlimeSplit: true
+    PreventOtherDrops: true
+    MaxCombatDistance: 30
+    KnockbackResistance: 1
+  Skills:
+  - skill{s=AngrySludgePoison} 0.2
+Saryn:
+  Type: MAGMA_CUBE
+  Display: '&dSaryn'
+  Health: 750
+  Damage: 30
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> Je ressent en toi la même peur que chez ces créatures vertes!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co> Je sens en toi la même crainte que chez tout les etres vivants, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonSkeletons} @Self 0.1
+  - skill{s=Prime} @Self 0.2
+  - skill{s=SmashAttack} @Target >0 0.3
+  - skill{s=Primes} @Target 0.9
+  - skill{s=Primes} @Target 0.4
+  - skill{s=AngrySludgePoison} @Target 0.1
+  Equipment:
+  - KingsCrown:4
+  - Nikana:0
+  - SkeletonKingSword:0
+  Drops:
+  - SkeletonKingDrops
+  - Nikana
+  - Nikana
+  - Nikana
+  - Nikana
+  - Oberon
+  - Oberon
+  - Nikana 2 0.2
+  - gold_nugget 10 0.5
+  - gold_nugget 20 0.5
+  - gold_nugget 30 0.5
+  Options:
+    Size: 5
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 80
+    PreventOtherDrops: true
+SkeletalMinion:
+  Type: SKELETON
+  Display: '&2Serviteur de Saryn'
+  Health: 10
+  Damage: 50
+  Options:
+    MovementSpeed: 0.5
+Prime:
+  Type: SLIME
+  Display: '&2Serviteur maléfique de Saryn'
+  Health: 5
+  Damage: 70
+  Skills:
+  - skill{s=AngrySludgePoison} @Target 0.1
+  Options:
+    MovementSpeed: 0.5
+Sabadon:
+  Type: VINDICATOR
+  Display: '&dSabadon Gardien du néant'
+  Health: 160
+  Damage: 20
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> Bienvenue dans le néant !"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co> Tu est faible, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SmashAttack} @Target >0 0.3
+  - skill{s=Primes} @Target 0.9
+  - skill{s=Primes} @Target 0.4
+  - skill{s=AngrySludgePoison} @Target 0.1
+  - skill{s=Sabadon} @Target 0.8
+  Equipment:
+  - KingsCrown:4
+  - Nikanaxe:0
+  Drops:
+  - SkeletonKingDrops
+  - Nikanaxe
+  - Nikanaxe
+  - Nikanaxe
+  - Nikanaxe
+  - Oberon1
+  - Oberon1
+  Options:
+    Size: 5
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 80
+    PreventOtherDrops: true
+Cephalon:
+  Type: IRON_GOLEM
+  Display: '&d&lCephalon'
+  Health: 120
+  Damage: 4
+  Skills:
+  - skill{s=Jump} @Target 0.6
+  - skill{s=AngrySludgePoison} @Target 0.1
+  - skill{s=revie} ~onDeath 1
+  Equipment:
+  - KingsCrown:4
+  - Nikanaxe:0
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 100
+  Drops:
+  - SkeletonKingDrops 0.3
+  - Oberon 0.1
+  - loos 0.1
+Cephalon2:
+  Type: WITHER_SKELETON
+  Display: '&d&lCephalon seconde forme'
+  Health: 150
+  Damage: 4
+  Skills:
+  - skill{s=Jump} @Target 0.6
+  - skill{s=Geyser} @Target 0.8
+  - skill{s=AngrySludgePoison} @Target 0.1
+  - skill{s=revie3} ~onDeath 1
+  Equipment:
+  - KingsCrown:4
+  - Nikanaxe:0
+  Drops:
+  - SkeletonKingDrops 0.3
+  - Oberon1 0.1
+  - Oberon2 0.5
+  - Oberon 0.2
+  - loos 0.7
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 100
+Cephalon3:
+  Type: ZOMBIE
+  Display: '&d&lCephalon forme finale'
+  Health: 200
+  Damage: 4
+  Skills:
+  - skill{s=Jump} @Target 0.6
+  - skill{s=Grab} @Target 0.6
+  - skill{s=Geyser} @Target 0.8
+  - skill{s=AngrySludgePoison} @Target 0.1
+  - skill{s=revie4} ~onDeath 1
+  Equipment:
+  - KingsCrown:4
+  - Nikanaxe:0
+  Drops:
+  - SkeletonKingDrops 0.3
+  - Oberon1 0.1
+  - Oberon2 0.1
+  - Oberon3 0.1
+  - loos 0.1
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 100
+Cephalon4:
+  Type: ZOMBIE
+  Display: '&d&lCephalon'
+  Health: 300
+  BossBar:
+   Enabled: true
+   Title: 'Cephalon forme parfaite'
+   Range: 10
+   Color: BLUE
+   Style: SOLID
+  Damage: 8
+  Skills:
+  - skill{s=Jump} @Target 0.6
+  - skill{s=Grab} @Target 0.6
+  - skill{s=Geyser} @Target 0.8
+  - skill{s=AngrySludgePoison} @Target 0.1
+  - doppleganger @NearestPlayer ~onSpawn
+  - skill{s=Saaryn} @self 0.2
+  - skill{s=Primes} @Target 0.2
+  - skill{s=SHULKER} @Target 0.2
+  - skill{s=SummonSkeletons} @Self 0.1
+  - skill{s=Jump} @Target 0.6
+  - skill{s=Grab} @Target 0.6
+  - skill{s=Geyser} @Target 0.8
+  - skill{s=AngrySludgePoison} @Target 0.1
+  - doppleganger @NearestPlayer ~onSpawn
+  - skill{s=Saaryn} @self 0.2
+  - skill{s=Primes} @Target 0.2
+  - skill{s=SHULKER} @Target 0.2
+  - skill{s=SummonSkeletons} @Self 0.1
+  - skill{s=Jump} @Target 0.6
+  - skill{s=Grab} @Target 0.6
+  - skill{s=Geyser} @Target 0.8
+  - skill{s=AngrySludgePoison} @Target 0.1
+  - doppleganger @NearestPlayer ~onSpawn
+  - skill{s=Saaryn} @self 0.2
+  - skill{s=Primes} @Target 0.2
+  - skill{s=SHULKER} @Target 0.2
+  - skill{s=SummonSkeletons} @Self 0.1
+  - skill{s=Jump} @Target 0.6
+  - skill{s=Grab} @Target 0.6
+  - skill{s=Geyser} @Target 0.8
+  - skill{s=AngrySludgePoison} @Target 0.1
+  - doppleganger @NearestPlayer ~onSpawn
+  - skill{s=Saaryn} @self 0.2
+  - skill{s=Primes} @Target 0.2
+  - skill{s=SHULKER} @Target 0.2
+  - skill{s=SummonSkeletons} @Self 0.1
+  - skill{s=Jump} @Target 0.6
+  - skill{s=Grab} @Target 0.6
+  - skill{s=Geyser} @Target 0.8
+  - skill{s=AngrySludgePoison} @Target 0.1
+  - doppleganger @NearestPlayer ~onSpawn
+  - skill{s=Saaryn} @self 0.2
+  - skill{s=Primes} @Target 0.2
+  - skill{s=SHULKER} @Target 0.2
+  - skill{s=SummonSkeletons} @Self 0.1
+  Equipment:
+  - KingsCrown:4
+  - Nikanaxe:1
+  Drops:
+  - SkeletonKingDrops
+  - Nikanaxe
+  - Nikanaxe
+  - loss
+  - Oberon2
+  - Oberon3
+  - Oberon4
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 100
+Saaryn:
+  Type: MAGMA_CUBE
+  Display: '&dSaryn'
+  Health: 20
+  Damage: 30
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> Je ressent en toi la même peur que chez ces créatures vertes!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co> Je sens en toi la même crainte que chez tout les etres vivants, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonSkeletons} @Self 0.1
+  - skill{s=Prime} @Self 0.2
+  - skill{s=SmashAttack} @Target >0 0.3
+  - skill{s=Primes} @Target 0.9
+  - skill{s=Primes} @Target 0.4
+  - skill{s=AngrySludgePoison} @Target 0.1
+  Equipment:
+  - KingsCrown:4
+  - Nikana:0
+  - SkeletonKingSword:0
+  Drops:
+  - SkeletonKingDrops
+  - Nikana 0.5
+  - SkeletonKingDrops 0.3
+  - Oberon1 0.2
+  - Oberon4 0.2
+  - loos 0.3
+SHULKER:
+  Type: SHULKER
+  Display: '&dTourelle du néant'
+  Health: 5
+  Damage: 5
+  Skills:
+  - skill{s=SHULKER} @Self 0.4
+  - skill{s=AngrySludgePoison} @Target 0.4
+  Equipment:
+  - KingsCrown:4
+  - Nikana:0
+  - SkeletonKingSword:0
+Nekros:
+  Type: WITHER_SKELETON
+  Display: '&2Visage du néant'
+  Health: 800
+  Damage: 8
+  Skills:
+  - skill{s=Nekros} @Target 0.1
+  - doppleganger @NearestPlayer ~onSpawn
+  - skill{s=Copie} @Self 0.1
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 100
 esprost1:
   Type: ELDER_GUARDIAN
   Display: '&dHydriades'
   Health: 100
+  Damage: 6
   BossBar:
    Enabled: true
    Title: 'Hydriades'
    Range: 20
    Color: BLUE
    Style: SOLID
-   Damage: 6
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Nous allons voir si tu est aussi fort que dans l'eau  "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   - skill{s=colonedeau} @Target >0 0.1
   Equipment:
-
+  - Nikana
   Drops:
-  esprost2:
+  - Nikana
+esprost2:
   Type: SKELETON
   Display: '&dHéraut de Ergolis '
   Health: 150
+  Damage: 8
   BossBar:
    Enabled: true
    Title: 'Héraut de Ergolis'
    Range: 20
    Color: RED
-   Style: SOLID 
-  Damage: 8
+   Style: SOLID
   Skills:
   - message{cooldown=20;m="<mob.name><&co>Je vais mettre le feu , hahaha!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   - skill{s=Colonedefeu} @Target >0 0.1
   Equipment:
-  
-  Drops:
-  esprost3:
+  - Nikana
+esprost3:
   Type: ZOMBIE
   Display: '&dLoki'
   Health: 200
+  Damage: 9
   BossBar:
    Enabled: true
    Title: 'Loki'
    Range: 20
    Color: GREEN
    Style: SOLID
-  Damage: 9
- Skills:
+  Skills:
   - message{cooldown=20;m="<mob.name><&co> Kage bunshin no jutsu "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
-
-  Drops:
- esprost4:
+  - Nikana
+esprost4:
   Type: ZOMBIE
   Display: '&dDruide de la griffe'
   Health: 250
+  Damage: 10
   BossBar:
    Enabled: true
    Title: 'Druide de la griffe'
    Range: 20
    Color: GREEN
    Style: SOLID
-  Damage: 10
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Vous ne passerai pas !!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
-
-  Drops:
-  esprost5:
+  - Nikana
+esprost5:
   Type: ZOMBIE
   Display: '&dBrutus'
   Health: 350
+  Damage: 11
   BossBar:
    Enabled: true
    Title: 'Brutus'
    Range: 20
    Color: RED
-   Style: SOLID 
-  Damage: 11
+   Style: SOLID Skills:
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Bassssssston !!!!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   Equipment:
-
-  Drops:
-  esprost6:
-  Type: ZOMBIE
+  - Nikana
+esprost6:
+  Type: VINDINCATION_VILLAGER
   Display: '&dMirouar'
   Health: 400
-  
- BossBar:
-  Enabled: true
-  Title: 'Mirouar'
-  Range: 20
-  Color: YELLOW
-  Style: SOLID 
- Damage: 12
- Skills:
+  Damage: 12
+  BossBar:
+   Enabled: true
+   Title: 'Mirouar'
+   Range: 20
+   Color: YELLOW
+   Style: SOLID Skills:
+  Skills:
   - message{cooldown=20;m="<mob.name><&co> Arrivera tu a m'attiendre  ?"} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
-
- 
-  esprost7:
+  - Nikana
+esprost7:
   Type: ZOMBIE
   Display: '&dEsprost'
   Health: 450
+  Damage: 13
   BossBar:
    Enabled: true
    Title: 'Esprost'
    Range: 20
    Color: BLACK
    Style: SOLID
-  Damage: 13
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Tu est arrivé jusqu'ici , bravo! mais tu va mourir maintement "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - message{m="<mob.name><&co> je suis esprost le maitre de esprits tu me pourra jamais me vaincre!!, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
-
-  Drops:
+  - Nikana
