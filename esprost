@@ -4,7 +4,7 @@ esprost1:
   Health: 100
   Damage: 6
   Skills:
-  - message{cooldown=20;m="<mob.name><&co> nous allons voir si tu est aussi fort que dans l'eau  "} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{cooldown=20;m="<mob.name><&co> Nous allons voir si tu est aussi fort que dans l'eau  "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
 
@@ -15,18 +15,18 @@ esprost1:
   Health: 150
   Damage: 8
   Skills:
-  - message{cooldown=20;m="<mob.name><&co>je vais mettre le feu , hahaha!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{cooldown=20;m="<mob.name><&co>Je vais mettre le feu , hahaha!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
 
   Drops:
   esprost3:
   Type: ZOMBIE
-  Display: '&dloki'
+  Display: '&dLoki'
   Health: 200
   Damage: 9
   Skills:
-  - message{cooldown=20;m="<mob.name><&co> kage bunshin no jutsu "} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{cooldown=20;m="<mob.name><&co> Kage bunshin no jutsu "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
 
@@ -37,7 +37,7 @@ esprost1:
   Health: 250
   Damage: 10
   Skills:
-  - message{cooldown=20;m="<mob.name><&co> vous ne passerai pas !!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{cooldown=20;m="<mob.name><&co> Vous ne passerai pas !!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
 
@@ -48,17 +48,17 @@ esprost1:
   Health: 350
   Damage: 11
   Skills:
-  - message{cooldown=20;m="<mob.name><&co> bassssssston !!!!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{cooldown=20;m="<mob.name><&co> Bassssssston !!!!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   Equipment:
 
   Drops:
   esprost6:
-  Type: VINDINCATION_ILLAGER
+  Type: VINDINCATION_VILLAGER
   Display: '&dMirouar'
   Health: 400
   Damage: 12
   Skills:
-  - message{cooldown=20;m="<mob.name><&co> arrrivera tu a m'attiendre  "} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{cooldown=20;m="<mob.name><&co> Arrivera tu a m'attiendre  ?"} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
 
