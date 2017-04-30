@@ -55,7 +55,6 @@ esprost1:
   Type: ZOMBIE
   Display: '&dDruide de la griffe'
   Health: 250
-  
   BossBar:
    Enabled: true
    Title: 'Druide de la griffe'
@@ -86,7 +85,7 @@ esprost1:
 
   Drops:
   esprost6:
-  Type: VINDINCATION_ILLAGER
+  Type: ZOMBIE
   Display: '&dMirouar'
   Health: 400
   
