@@ -17,3 +17,10 @@ Colonedeau:
   - effect:geyser{type=WATER;height=3;speed=10} @Target
   - delay 10
   - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5}
+Colonedefeu:
+  Cooldown: 30
+  Skills:
+  - message{cooldown=30;m="<mob.name><&co> Bois la tasse !!"} @PlayersInRadius{r=40}
+  - effect:geyser{type=LAVA;height=3;speed=10} @Target
+  - delay 10
+  - ignite{ticks=100} @Target
