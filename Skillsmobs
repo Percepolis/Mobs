@@ -3,11 +3,15 @@ SmashAttack:
   Cooldown: 8
   Conditions:
   - targetwithin 25
-  Skills:
-  - message{cooldown=30;m="<mob.name><&co> Meurt !"} @PlayersInRadius{r=40}
+  Skills  - message{cooldown=30;m="<mob.name><&co> Meurt !"} @PlayersInRadius{r=40}
   - teleport @target
   - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
   - delay 10
   - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
   - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
   - effect:explosion @Self
+Colonedeau:
+  Cooldown: 30
+  Skills:
+  - message{cooldown=30;m="<mob.name><&co> Bois la tasse !!"} @PlayersInRadius{r=40}
+  - 
