@@ -14,4 +14,4 @@ Colonedeau:
   Cooldown: 30
   Skills:
   - message{cooldown=30;m="<mob.name><&co> Bois la tasse !!"} @PlayersInRadius{r=40}
-  - 
+  - effect:geyser{type=WATER;height=3;speed=10}
