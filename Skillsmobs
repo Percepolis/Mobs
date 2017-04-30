@@ -126,6 +126,7 @@ Colonedeau:
   - effect:geyser{type=WATER;height=10;speed=10} @Target
   - delay 10
   - throw{velocity=20;velocityY=10} @PlayersInRadius{r=5}
+   - damage{amount=10;ignorearmor=true} @Target
 Colonedefeu:
   Cooldown: 30
   Skills:
