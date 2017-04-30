@@ -11,8 +11,10 @@ esprost1:
    Style: SOLID
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Nous allons voir si tu est aussi fort que dans l'eau  "} @PlayersInRadius{r=40} ~onCombat >0 0.2
-  - skill{s=SmashAttack} @Target 0.1 
-  - skill{s=colonedeau} @Target 0.1
+  - skill{s=SmashAttack} @Target 0.1
+  - skill{s=Colonedeau} @Target 0.1
+  - skill{s=Colonedeau} @Target 0.7
+  - skill{s=Colonedeau} @Target 0.1
   Equipment:
   - Nikana
   Drops:
@@ -30,8 +32,8 @@ esprost2:
    Style: SOLID
   Skills:
   - message{cooldown=20;m="<mob.name><&co>Je vais mettre le feu , hahaha!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
-  - skill{s=SmashAttack} @Target 0.1
   - skill{s=Colonedefeu} @Target 0.1
+  - skill{s=Colonedefeu} @Target 0.7
   Equipment:
   - Nikana
 esprost3:
@@ -47,7 +49,7 @@ esprost3:
    Style: SOLID
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Kage bunshin no jutsu "} @PlayersInRadius{r=40} ~onCombat >0 0.2
-  - skill{s=SmashAttack} @Target 0.1
+  - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
   - Nikana
 esprost4:
@@ -63,7 +65,7 @@ esprost4:
    Style: SOLID
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Vous ne passerai pas !!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
-  - skill{s=SmashAttack} @Target 0.1
+  - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
   - Nikana
 esprost5:
@@ -94,7 +96,7 @@ esprost6:
    Style: SOLID 
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Arrivera tu a m'attiendre  ?"} @PlayersInRadius{r=40} ~onCombat >0 0.2
-  - skill{s=SmashAttack} @Target 0.1
+  - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
   - Nikana
 esprost7:
@@ -111,6 +113,6 @@ esprost7:
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Tu est arrivé jusqu'ici , bravo! mais tu va mourir maintement "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - message{m="<mob.name><&co> je suis esprost le maitre de esprits tu me pourra jamais me vaincre!!, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
-  - skill{s=SmashAttack} @Target 0.1
+  - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
   - Nikana
