@@ -76,7 +76,7 @@ esprost5:
    Title: 'Brutus'
    Range: 20
    Color: RED
-   Style: SOLID Skills:
+   Style: SOLID 
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Bassssssston !!!!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   Equipment:
