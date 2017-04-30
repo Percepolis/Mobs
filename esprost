@@ -8,9 +8,6 @@ Saryn:
   - message{m="<mob.name><&co> je suis esprost le maitre de esprits tu me pourra jamais me vaincre!!, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
-  - KingsCrown:4
-  - Nikana:0
-  - SkeletonKingSword:0
+
   Drops:
-  - SkeletonKingDrops
-  - Nikana
+ 
