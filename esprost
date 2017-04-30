@@ -116,3 +116,17 @@ esprost7:
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
   - Nikana
+
+
+esprost10:
+  Type: ZOMBIE
+  Display: '&geurrier de l'outre tombe '
+  Health: 20
+  Damage: 3
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> Nous allons voir si tu est aussi fort que dans l'eau  "} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - skill{s=SmashAttack} @Target 0.1 
+  Equipment:
+  - Nikana
+  Drops:
+  - Nikana
