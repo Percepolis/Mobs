@@ -3,6 +3,12 @@ esprost1:
   Display: '&dHydriades'
   Health: 100
   Damage: 6
+  BossBar:
+  Enabled: true
+  Title: 'Hydriades'
+  Range: 20
+  Color: BLUE
+  Style: SOLID
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Nous allons voir si tu est aussi fort que dans l'eau  "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
@@ -14,6 +20,12 @@ esprost1:
   Display: '&dHéraut de Ergolis '
   Health: 150
   Damage: 8
+  BossBar:
+  Enabled: true
+  Title: 'Héraut de Ergolis'
+  Range: 20
+  Color: RED
+  Style: SOLID
   Skills:
   - message{cooldown=20;m="<mob.name><&co>Je vais mettre le feu , hahaha!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
@@ -25,7 +37,12 @@ esprost1:
   Display: '&dLoki'
   Health: 200
   Damage: 9
-  Skills:
+  BossBar:
+  Enabled: true
+  Title: 'Loki'
+  Range: 20
+  Color: RED
+  Style: SOLIDSkills:
   - message{cooldown=20;m="<mob.name><&co> Kage bunshin no jutsu "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
@@ -36,7 +53,12 @@ esprost1:
   Display: '&dDruide de la griffe'
   Health: 250
   Damage: 10
-  Skills:
+  BossBar:
+  Enabled: true
+  Title: 'Test'
+  Range: 20
+  Color: RED
+  Style: SOLIDSkills:
   - message{cooldown=20;m="<mob.name><&co> Vous ne passerai pas !!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
@@ -47,7 +69,12 @@ esprost1:
   Display: '&dbrutus'
   Health: 350
   Damage: 11
-  Skills:
+ BossBar:
+  Enabled: true
+  Title: 'Test'
+  Range: 20
+  Color: RED
+  Style: SOLID Skills:
   - message{cooldown=20;m="<mob.name><&co> Bassssssston !!!!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   Equipment:
 
@@ -57,13 +84,23 @@ esprost1:
   Display: '&dMirouar'
   Health: 400
   Damage: 12
-  Skills:
+ BossBar:
+  Enabled: true
+  Title: 'Test'
+  Range: 20
+  Color: RED
+  Style: SOLID Skills:
   - message{cooldown=20;m="<mob.name><&co> Arrivera tu a m'attiendre  ?"} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
 
   Drops:
-  esprost7:
+  BossBar:
+  Enabled: true
+  Title: 'Test'
+  Range: 20
+  Color: RED
+  Style: SOLIDesprost7:
   Type: ZOMBIE
   Display: '&dEsprost'
   Health: 450
