@@ -1,5 +1,5 @@
 esprost1:
-  Type: WITHER_SKE
+  Type: ZOMBIE
   Display: '&dEsprost'
   Health: 400
   Damage: 13
@@ -11,7 +11,7 @@ esprost1:
 
   Drops:
   esprost2:
-  Type: WITHER_SKE
+  Type: ZOMBIE
   Display: '&dEsprost'
   Health: 400
   Damage: 13
@@ -23,7 +23,7 @@ esprost1:
 
   Drops:
   esprost3:
-  Type: WITHER_SKE
+  Type: ZOMBIE
   Display: '&dEsprost'
   Health: 400
   Damage: 13
@@ -35,7 +35,7 @@ esprost1:
 
   Drops:
  esprost4:
-  Type: WITHER_SKE
+  Type: ZOMBIE
   Display: '&dEsprost'
   Health: 400
   Damage: 13
@@ -47,7 +47,7 @@ esprost1:
 
   Drops:
   esprost5:
-  Type: WITHER_SKE
+  Type: ZOMBIE
   Display: '&dEsprost'
   Health: 400
   Damage: 13
@@ -59,7 +59,7 @@ esprost1:
 
   Drops:
   esprost6:
-  Type: WITHER_SKE
+  Type: ZOMBIE
   Display: '&dEsprost'
   Health: 400
   Damage: 13
@@ -71,7 +71,7 @@ esprost1:
 
   Drops:
   esprost7:
-  Type: WITHER_SKE
+  Type: ZOMBIE
   Display: '&dEsprost'
   Health: 400
   Damage: 13
