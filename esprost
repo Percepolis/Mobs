@@ -38,11 +38,12 @@ esprost1:
   Health: 200
   Damage: 9
   BossBar:
-  Enabled: true
-  Title: 'Loki'
-  Range: 20
-  Color: RED
-  Style: SOLIDSkills:
+   Enabled: true
+   Title: 'Loki'
+   Range: 20
+   Color: GREEN
+   Style: SOLID
+   Skills:
   - message{cooldown=20;m="<mob.name><&co> Kage bunshin no jutsu "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
@@ -54,11 +55,12 @@ esprost1:
   Health: 250
   Damage: 10
   BossBar:
-  Enabled: true
-  Title: 'Test'
-  Range: 20
-  Color: RED
-  Style: SOLIDSkills:
+   Enabled: true
+   Title: 'Druide de la griffe'
+   Range: 20
+   Color: GREEN
+  Style: SOLID
+  Skills:
   - message{cooldown=20;m="<mob.name><&co> Vous ne passerai pas !!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
@@ -66,12 +68,12 @@ esprost1:
   Drops:
   esprost5:
   Type: ZOMBIE
-  Display: '&dbrutus'
+  Display: '&dBrutus'
   Health: 350
   Damage: 11
  BossBar:
   Enabled: true
-  Title: 'Test'
+  Title: 'Brutus'
   Range: 20
   Color: RED
   Style: SOLID Skills:
@@ -86,25 +88,26 @@ esprost1:
   Damage: 12
  BossBar:
   Enabled: true
-  Title: 'Test'
+  Title: 'Mirouar'
   Range: 20
-  Color: RED
+  Color: YELLOW
   Style: SOLID Skills:
   - message{cooldown=20;m="<mob.name><&co> Arrivera tu a m'attiendre  ?"} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
 
-  Drops:
-  BossBar:
-  Enabled: true
-  Title: 'Test'
-  Range: 20
-  Color: RED
-  Style: SOLIDesprost7:
+ 
+  esprost7:
   Type: ZOMBIE
   Display: '&dEsprost'
   Health: 450
   Damage: 13
+  BossBar:
+   Enabled: true
+   Title: 'Esprost'
+   Range: 20
+   Color: BLACK
+   Style: SOLID
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Tu est arrivé jusqu'ici , bravo! mais tu va mourir maintement "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - message{m="<mob.name><&co> je suis esprost le maitre de esprits tu me pourra jamais me vaincre!!, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
