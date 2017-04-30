@@ -127,7 +127,7 @@ Colonedeau:
   - delay 10
   - damage{amount=2;ignorearmor=true} @Target
   - potion{type=slowness;lvl=2;duration=100} @PlayersInRadius{r=15}
-  - potion{type=poison;lvl=2;duration=100} @PlayersInRadius{r=15}
+  - potion{type=poison;lvl=1;duration=100} @PlayersInRadius{r=15}
   - effect:particles{p=water;amount=5000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
   - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5}
 Colonedefeu:
