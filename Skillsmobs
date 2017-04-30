@@ -1,4 +1,124 @@
-
+# 
+# These example files show you some VERY basic meta skills.
+# You can copy and expand them however you'd like.
+SmashAttack:
+  Cooldown: 8
+  Conditions:
+  - targetwithin 25
+  Skills:
+  - message{cooldown=30;m="<mob.name><&co> Meurt !"} @PlayersInRadius{r=40}
+  - teleport @target
+  - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+  - delay 10
+  - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
+  - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+SummonSkeletons:
+  Cooldown: 20
+  Skills:
+  - message{m="<mob.name><&co> Humain tu m'agace ! , réveillez vous mes serviteurs !"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+Prime:
+  Cooldown: 30
+  Skills:
+  - message{m="<mob.name><&co> Humain tu m'agace ! , réveillez vous mes serviteurs maléfique !"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=Prime;amount=2;noise=5} @Self
+  - delay 20
+AngrySludgePoison:
+  Cooldown: 10
+  Skills:
+  - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=15}
+  - damage{amount=1;ignorearmor=true} @PlayersInRadius{r=5}
+  - effect:particles{p=happyVillager;amount=5000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+Primes:
+  Cooldown: 7
+  Skills:
+  - teleport @target
+  - effect:lightning @self
+  - damage{amount=2;ignorearmor=true} @PlayersInRadius{r=5}
+Sabadon:
+  Cooldown: 7
+  Skills:
+  - healpercent{m=0.2} @self ~onAttack
+  - effect:particles{p=heart;amount=5000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+  - damage{amount=1;ignorearmor=true} @PlayersInRadius{r=5}
+Geyser:
+  Cooldown: 7
+  Skills:
+  - effect:geyser{type=LAVA;height=3;speed=10} @target
+  - effect:particlering{particle=flame;radius=20;points=32;amount=4000;hS=1;vS=0} @target
+  - damage{amount=10;ignorearmor=false} @PlayersInRadius{r=5}
+  - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=15}
+  - effect:particles{p=flame;amount=5000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+  - leap{velocity=200} @target
+  - delay 20
+  - jump{velocity=-100}
+  - effect:explosion @self
+  - damage{amount=5} @EntitiesInRadius{r=5}
+  - command{c="cast earthquake"} @self
+  - command{c="cast wave"} @self
+Grab:
+  Cooldown: 35
+  Skills:
+  - pull{velocity=15} @target
+  - healpercent{m=0.09} @self ~onAttack
+  - effect:particles{p=heart;amount=5000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+Jump:
+  Cooldown: 30
+  Skills:
+  - jump{velocity=1.8}
+  - effect:explosion @Self
+  - damage{amount=1} @EntitiesInRadius{r=5}
+  - shootfireball{y=0.2;v=4} @target
+  - delay 50
+  - shootfireball{y=0.2;v=4} @target
+  - effect:lightning @target
+Copie:
+  Skills:
+  - doppleganger @NearestPlayer
+revie:
+  Skills:
+  - summon{mob=Cephalon2;amount=1;noise=5} @Self
+  - effect:lightning @self
+revie3:
+  Skills:
+  - summon{mob=Cephalon3;amount=1;noise=5} @Self
+  - effect:lightning @self
+revie4:
+  Skills:
+  - summon{mob=Cephalon4;amount=1;noise=5} @Self
+  - effect:lightning @self
+Saaryn:
+  Cooldown: 50
+  Skills:
+  - summon{mob=Saaryn;amount=1;noise=5} @Self
+  - doppleganger @NearestPlayer
+SHULKER:
+  Cooldown: 50
+  Skills:
+  - summon{mob=SHULKER;amount=2;noise=5} @Self
+Nekros:
+  Cooldown: 5
+  Skills:
+  - effect:particles{p=snowshovel;a=25;vS=0.5;hS=0.5;Speed=0;y=0}
+  - effect:sound{s=mob.zombie.unfect;p=2}
+  - effect:sound{s=mob.zombie.unfect;p=1.9}
+  - throw{velocity=18;velocityY=15} @PlayersInRadius{r=8}
+  - potion{type=DAMAGE_RESISTANCE;d=60;l=5}
+  - arrowvolley{a=20;s=25;v=10;f=50;rd=200} @Target
+  - shoot{type=ARROW;velocity=50;damage=10}
+  - delay 10
+  - shoot{type=ARROW;velocity=50;damage=10}
+  - delay 10
+  - shoot{type=ARROW;velocity=50;damage=10}
+  - shoot{type=ARROW;velocity=50;damage=10}
+  - shoot{type=ARROW;velocity=50;damage=10}
+  - damage{amount=10;ignorearmor=true} @Target
+  - effect:lightning @self
 SmashAttack:
   Cooldown: 8
   Conditions:
