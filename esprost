@@ -55,13 +55,14 @@ esprost1:
   Type: ZOMBIE
   Display: '&dDruide de la griffe'
   Health: 250
-  Damage: 10
+  
   BossBar:
    Enabled: true
    Title: 'Druide de la griffe'
    Range: 20
    Color: GREEN
-  Style: SOLID
+   Style: SOLID
+  Damage: 10
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Vous ne passerai pas !!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
@@ -72,13 +73,14 @@ esprost1:
   Type: ZOMBIE
   Display: '&dBrutus'
   Health: 350
+  BossBar:
+   Enabled: true
+   Title: 'Brutus'
+   Range: 20
+   Color: RED
+   Style: SOLID 
   Damage: 11
- BossBar:
-  Enabled: true
-  Title: 'Brutus'
-  Range: 20
-  Color: RED
-  Style: SOLID Skills:
+  Skills:
   - message{cooldown=20;m="<mob.name><&co> Bassssssston !!!!!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   Equipment:
 
@@ -87,13 +89,15 @@ esprost1:
   Type: VINDINCATION_ILLAGER
   Display: '&dMirouar'
   Health: 400
-  Damage: 12
+  
  BossBar:
   Enabled: true
   Title: 'Mirouar'
   Range: 20
   Color: YELLOW
-  Style: SOLID Skills:
+  Style: SOLID 
+ Damage: 12
+ Skills:
   - message{cooldown=20;m="<mob.name><&co> Arrivera tu a m'attiendre  ?"} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target >0 0.1
   Equipment:
@@ -103,13 +107,13 @@ esprost1:
   Type: ZOMBIE
   Display: '&dEsprost'
   Health: 450
-  Damage: 13
   BossBar:
    Enabled: true
    Title: 'Esprost'
    Range: 20
    Color: BLACK
    Style: SOLID
+  Damage: 13
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Tu est arrivé jusqu'ici , bravo! mais tu va mourir maintement "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - message{m="<mob.name><&co> je suis esprost le maitre de esprits tu me pourra jamais me vaincre!!, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
