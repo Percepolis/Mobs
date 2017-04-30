@@ -1,7 +1,7 @@
 Saryn:
   Type: WITHER_SKELETON
   Display: '&dSaryn'
-  Health: 90000
+  Health: 400
   Damage: 13
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Tu est arrivé jusqu'ici , bravo! mais tu va mourir maintement "} @PlayersInRadius{r=40} ~onCombat >0 0.2
