@@ -138,3 +138,10 @@ Colonedefeu:
   - delay 10
   - ignite{ticks=100} @Target
   - effect:particles{p=flame;amount=5000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+Teleportation:
+  Cooldown: 30
+  Skills:
+  - teleport{spreadh=5;spreadv=0} @target
+  - potion{type=INVISIBILITY;duration=100;level=4} @Self
+  - spring{d=100} @target
+  - effect:smoke{direction=2} @self
