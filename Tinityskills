@@ -3,3 +3,4 @@ ejection:
   - effect:explosion @Self
   - damage{amount=6} @PlayersInRadius{r=5}
   - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5}
+  - spring{t=lava;d=100} @target
