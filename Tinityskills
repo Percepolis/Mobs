@@ -11,6 +11,7 @@ ejection:
 Homer:
   Skills:
   - missile{ot=Homer_TICK;oh=Homer_HIT;v=4;i=1;hR=1;vR=1;in=0.75}
+  - damage{amount=6} @PlayersInRadius{r=5}
 
 Homer_TICK:
   Skills:
