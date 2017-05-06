@@ -6,6 +6,8 @@ ejection:
   - throw{velocity=15;velocityY=5} @PlayersInRadius{r=5}
   - spring{t=lava;d=100} @target
   - effect:smoke @Self
+  - delay 20
+  - teleport{spreadh=5;spreadv=0} @target
 Homer:
   Skills:
   - missile{ot=Homer_TICK;oh=Homer_HIT;v=4;i=1;hR=1;vR=1;in=0.75}
