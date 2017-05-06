@@ -1,0 +1,36 @@
+Saryn:
+  Type: MAGMA_CUBE
+  Display: '&dSaryn'
+  Health: 750
+  Damage: 30
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> Je ressent en toi la même peur que chez ces créatures vertes!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co> Je sens en toi la même crainte que chez tout les etres vivants, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonSkeletons} @Self 0.1
+  - skill{s=Prime} @Self 0.2
+  - skill{s=SmashAttack} @Target >0 0.3
+  - skill{s=Primes} @Target 0.9
+  - skill{s=Primes} @Target 0.4
+  - skill{s=AngrySludgePoison} @Target 0.1
+  Equipment:
+  - KingsCrown:4
+  - Nikana:0
+  - SkeletonKingSword:0
+  Drops:
+  - SkeletonKingDrops
+  - Nikana
+  - Nikana
+  - Nikana
+  - Nikana
+  - Oberon
+  - Oberon
+  - Nikana 2 0.2
+  - gold_nugget 10 0.5
+  - gold_nugget 20 0.5
+  - gold_nugget 30 0.5
+  Options:
+    Size: 5
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 80
+    PreventOtherDrops: true
