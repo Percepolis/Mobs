@@ -1,4 +1,5 @@
 ejection:
+  Cooldown: 30
   Skills:
   - effect:explosion @Self
   - damage{amount=6} @PlayersInRadius{r=5}
