@@ -166,5 +166,18 @@ soin :
    Cooldown: 30
    Skills:
   - healpercent{m=0.09} @self ~onAttack
+Homer4:
+  Skills:
+  - missile{ot=Homer_TICK4;oh=Homer_HIT4;v=4;i=1;hR=1;vR=1;in=0.75}
+
+Homer_TICK4:
+  Skills:
+  - effect:particles{p=flame;a=1} @origin
+
+Homer_HIT4:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:sound{s=entity.generic.explode;v=1;p=0}
+  - damage{a=1337;i=false}
 
   
