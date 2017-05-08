@@ -1,0 +1,24 @@
+revive2:
+  Skills:
+  - summon{mob=esprost2;amount=1;noise=5} @Self
+  - effect:lightning @self
+revive3:
+  Skills:
+  - summon{mob=esprost3;amount=1;noise=5} @Self
+  - effect:lightning @self
+revive4:
+  Skills:
+  - summon{mob=esprost4;amount=1;noise=5} @Self
+  - effect:lightning @self
+revive5:
+  Skills:
+  - summon{mob=esprost5;amount=1;noise=5} @Self
+  - effect:lightning @self
+revive6:
+  Skills:
+  - summon{mob=esprost6;amount=1;noise=5} @Self
+  - effect:lightning @self
+revive7:
+  Skills:
+  - summon{mob=esprost7;amount=1;noise=5} @Self
+  - effect:lightning @self
