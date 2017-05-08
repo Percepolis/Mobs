@@ -150,4 +150,4 @@ cooldown: 30
 Skills:
 -effect:Firework{direction=2} @self
 -throw{velocity=10;velocityY=0} @PlayersInRadius{r=5}
--Explosion
+ - explosion{yield=4} @target
