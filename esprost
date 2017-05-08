@@ -68,7 +68,7 @@ esprost4:
   Skills:
   - message{cooldown=20;m="<mob.name><&co> Vous ne passerai pas !!! "} @PlayersInRadius{r=40} ~onCombat >0 0.2
   - skill{s=SmashAttack} @Target > 0.1
-  - skill{s=push} @Target > 0.1
+ - skill{s=push} @Target > 0.1
   Equipment:
   - Nikana
 esprost5:
@@ -125,6 +125,12 @@ esprost7:
   - skill{s=Homer4} @Target > 0.1
   - skill{s=Homer4} @Target > 0.1
   - skill{s=Homer4} @Target > 0.1
+  - skill{s=Prison} @Target > 0.7
+  - skill{s=Invocation} @Target > 0.7
+  - skill{s=push} @Target > 0.7
+  - skill{s=Colonedefeu} @Target 0.7
+  - skill{s=ejection} @Target 0.7
+  - skill{s=Colonedeau} @Target 0.7
   Equipment:
   - Nikana
 esprost10:
