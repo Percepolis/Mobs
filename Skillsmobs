@@ -165,6 +165,6 @@ Prison :
 soin :
    Cooldown: 30
    Skills:
-   - heal{amount=20} @self ~onDamaged 0.2
+  - healpercent{m=0.09} @self ~onAttack
 
   
