@@ -178,6 +178,6 @@ Homer_HIT4:
   Skills:
   - effect:particles{p=lava;a=50;hS=1;vS=1}
   - effect:sound{s=entity.generic.explode;v=1;p=0}
-  - damage{a=1337;i=false}
+  - damage{a=1;i=false}
 
   
