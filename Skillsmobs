@@ -145,3 +145,9 @@ Teleportation:
   - potion{type=INVISIBILITY;duration=100;level=4} @Self
   - spring{d=100} @target
   - effect:smoke{direction=2} @self
+push:
+cooldown: 30
+Skills:
+-effect:Firework{direction=2} @self
+-throw{velocity=10;velocityY=0} @PlayersInRadius{r=5}
+-Explosion
