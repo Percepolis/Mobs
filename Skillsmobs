@@ -146,8 +146,40 @@ Teleportation:
   - spring{d=100} @target
   - effect:smoke{direction=2} @self
 push:
-cooldown: 30
-Skills:
--effect:Firework{direction=2} @self
--throw{velocity=10;velocityY=0} @PlayersInRadius{r=5}
- - explosion{yield=4} @target
+   Cooldown: 30
+   Skills:
+   - effect:Firework{direction=2} @self
+   - throw{velocity=10;velocityY=0} @PlayersInRadius{r=5}
+   - explosion{yield=4} @target
+Invocation : 
+   Cooldown : 30
+   Skills :
+   - effet: lightning @self
+   - summon{type=ZOMBIE;amount=10;radius=5} @PIR{r=20}
+   - effect:explosion @self ~onDamaged
+Prison :
+   Cooldown: 30
+   Skills:
+   - prison{material=IRON_BLOCK;duration=200;breakable=true} @target
+    - effet: enderbeam {d = 100; y = 2;} @target
+soin :
+   Cooldown: 30
+   Skills:
+   - heal{amount=20} @self ~onDamaged 0.2
+Missille :
+   Cooldown : 20
+   Skills:
+   Homer:
+  Skills:
+  - missile{ot=Homer_TICK;oh=Homer_HIT;v=4;i=1;hR=1;vR=1;in=0.75}
+
+Homer_TICK:
+  Skills:
+  - effect:particles{p=flame;a=1} @origin
+
+Homer_HIT:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:sound{s=entity.generic.explode;v=1;p=0}
+  - damage{a=1337;i=false}
+  
