@@ -166,6 +166,7 @@ soin :
    Cooldown: 30
    Skills:
   - healpercent{m=0.09} @self ~onAttack
+  - arrowvolley {a = 20; s = 25; v = 10; f = 50; rd = 200} @Target
 Homer4:
   Skills:
   - missile{ot=Homer_TICK4;oh=Homer_HIT4;v=4;i=1;hR=1;vR=1;in=0.75}
